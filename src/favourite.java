@@ -40,8 +40,8 @@ public class favourite extends HttpServlet {
 	      //  int length = arrayObj.length();
 	       try {
 		        arr.add(request.getParameter("title"));
-				/*arr.add(request.getParameter("rdate"));
-				arr.add(request.getParameter("avgvote"));*/
+				arr.add(request.getParameter("rdate"));
+				arr.add(request.getParameter("avgvote"));
 				arrayObj.put("output", arr);
 				FileWriter fw=new FileWriter("//home//sapient//Documents//jee_servlet//AmazonPrime//src/com//movie//output.json");
 				fw.write(arrayObj.toString());

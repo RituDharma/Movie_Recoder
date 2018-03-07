@@ -18,15 +18,17 @@
      
 	      <form class="form-inline my-2 my-lg-0">
 	          <input class="form-control mr-sm-2" type="search" placeholder="Search Movies" aria-label="Search" id="find" style="width:500px;">
-	          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="getData()">Search</button>
+	          <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="getData()">Search</button>
+	          <!-- <input type="button" value="Show Favourites" onClick="display()"> -->
 	     </form>
 	     </div>
 	     <div>
 	     <form class="form-inline my-2 my-lg-0" >
-	         <button class="btn btn-outline-success" type="submit" name="join">Join Us</button>
+	         <button class="btn btn-outline-success" type="button" name="Show Favourites" onClick="display()">Add To Favourite</button>
 	     </form> 
 	    </div>
 	</nav>
+	<div id="out"></div>
 <!-- carousel -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 		<ol class="carousel-indicators">
